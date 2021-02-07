@@ -1,29 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { MovieContext } from './MovieContext'
 
+const Nav = () => {
 
-const Nav = () => (
-    <nav>
-        <li>
-            <a href="#">
-                Home
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                User
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                About Us
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                Contact Us
-            </a>
-        </li>
-    </nav>
-)
+    const [movies, setMovies] = useContext(MovieContext)
+
+    return (
+        <nav>
+            No of movies: {movies.length}
+        </nav>
+    )
+}
 
 export default Nav;

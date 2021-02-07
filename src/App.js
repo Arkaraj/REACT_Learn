@@ -1,6 +1,9 @@
 import React, { useState, useReducer } from 'react'
 import './App.css';
+import Nav from './components/Nav'
 import MovieList from './components/MovieList';
+import { MovieProvider } from './components/MovieContext'
+import AddMovie from './components/AddMovie'
 
 /*function reducer(todos, action) {
 
@@ -41,18 +44,20 @@ function App() {
   }*/
 
   return (
-    <div className="App-header">
-      {/* <h1>Todo:</h1>
+    <MovieProvider>
+      <div className="App-header">
+        {/* <h1>Todo:</h1>
       <form onSubmit={handleSubmit}>
         <input type="text" value={name} onChange={e => setName(e.target.value)} />
       </form>
       {todos.map(todo => {
         return <Todo key={todo.id} todo={todo} dispatch={dispatch} />
       })} */}
-      <MovieList />
-
-
-    </div>
+        <Nav />
+        <AddMovie />
+        <MovieList />
+      </div>
+    </MovieProvider>
   );
 }
 
