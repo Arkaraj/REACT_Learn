@@ -1,8 +1,8 @@
 import React, { useState, useReducer } from 'react'
 import './App.css';
-import Todo from './components/Todo'
+import MovieList from './components/MovieList';
 
-function reducer(todos, action) {
+/*function reducer(todos, action) {
 
   switch (action.type) {
     case 'add-todo':
@@ -24,12 +24,12 @@ function reducer(todos, action) {
 
 function newTodo(name) {
   return { id: Date.now(), name, complete: false }
-}
+}*/
 
 
 function App() {
 
-  const [todos, dispatch] = useReducer(reducer, [])
+  /*const [todos, dispatch] = useReducer(reducer, [])
   const [name, setName] = useState('')
   // const [count, setCount] = useState(0)
 
@@ -38,16 +38,20 @@ function App() {
     dispatch({ type: "add-todo", payload: { name } })
 
     setName('')
-  }
+  }*/
 
   return (
     <div className="App-header">
+      {/* <h1>Todo:</h1>
       <form onSubmit={handleSubmit}>
         <input type="text" value={name} onChange={e => setName(e.target.value)} />
       </form>
       {todos.map(todo => {
         return <Todo key={todo.id} todo={todo} dispatch={dispatch} />
-      })}
+      })} */}
+      <MovieList />
+
+
     </div>
   );
 }
