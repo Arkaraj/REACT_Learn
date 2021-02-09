@@ -49,3 +49,17 @@ Chrome React Developer Tools
 ### Roadmap for REACT
 
 https://roadmap.sh/react
+
+### For Optimized Production build
+
+```sh
+$ npm run build
+```
+
+Creates build folder for deploying
+
+### Routing
+
+```sh
+$ npm i react-router-dom
+```
