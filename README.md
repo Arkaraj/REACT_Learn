@@ -63,3 +63,25 @@ Creates build folder for deploying
 ```sh
 $ npm i react-router-dom
 ```
+
+### This is REDUX and REACT Context BRANCH
+
+### Install REDUX
+
+```sh
+$ npm i redux react-redux
+```
+
+### Stuffs
+
+```text
+STORE -> its a globalized state
+
+ACTION -> its gonna call on state change
+
+REDUCER -> Based on action its gonna modify Store
+
+DISPATCH -> Execute the action, sends the action to reducer
+```
+
+Make these in index.js file
