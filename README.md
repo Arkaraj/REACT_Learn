@@ -85,3 +85,7 @@ DISPATCH -> Execute the action, sends the action to reducer
 ```
 
 Make these in index.js file
+
+#### Useful Chrome Dev tool
+
+https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en
