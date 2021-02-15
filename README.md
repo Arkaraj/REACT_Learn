@@ -63,3 +63,6 @@ Creates build folder for deploying
 ```sh
 $ npm i react-router-dom
 ```
+
+### Note
+Another branch called as redux is made, there all the REDUX files are there
